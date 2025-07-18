@@ -1,0 +1,38 @@
+from os import system as say 
+from os import kill as end
+import Header
+#________________________________________________________________________________________________________________________
+
+def getOperation():
+    return input('Operation:\n1) \n2) \n3) \n4) \n5) Back\n')
+
+def runOperation(Operation):
+    match Operation:
+        case '1':
+            say('clear')
+
+        case '2':
+            say('clear')
+            
+        case '3':
+            say('clear')
+        
+        case '4':
+            say('clear')
+            
+        case _:
+            say('clear')
+            print('Please select a valid operation.\n')
+
+    return 0
+
+#________________________________________________________________________________________________________________________
+
+operation = ''
+while operation != '':
+    operation = getOperation()
+
+    if operation == '':
+        end(0, 0)
+    else:
+        runOperation(operation)
